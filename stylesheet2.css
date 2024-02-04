@@ -1,0 +1,128 @@
+:root {
+    --primary-bg-color: #FFD23F;
+    --text-color: #000000;
+    --nav-bg-color: #000000;
+    --nav-text-color: #FFD23F;
+    --nav-hover-bg-color: black;
+    --input-padding: 10px;
+    --input-margin: 8px;
+    --input-font-size: 15px;
+    --button-padding: 15px 20px;
+    --button-font-size: 10px; /* Increased for better accessibility */
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    font-size: 20px;
+    line-height: 1.5;
+    background-color: var(--primary-bg-color);
+    margin: 0;
+    padding: 0;
+    color: var(--text-color);
+}
+
+html body.low-contrast {
+    background-color: #FFF !important; /* For low contrast */
+    color: #000 !important; /* For low contrast */
+}
+
+html body.high-contrast {
+    background-color: #000 !important;
+    color: white !important;
+}
+html body.high-contrast #applications {
+    background-color: #000 !important;
+    color: white !important;
+}
+
+html body.large-text {
+    font-size: 30px !important; 
+}
+
+html body.extra-large-text {
+    font-size: 40px !important;
+}
+
+.fixed-nav-bar {
+    position: fixed;
+    top: 0;
+    z-index: 9999;
+    width: 100%;
+    height: 50px;
+    background-color: var(--nav-bg-color);
+    display: flex;
+    align-items: center; /* Adjusted for better alignment */
+    justify-content: space-between;
+    padding-right: 20px; /* Added padding for spacing */
+}
+
+.fixed-nav-bar a, .fixed-nav-bar .my-account-tab, .fixed-nav-bar .profile-tab {
+    color: var(--nav-text-color);
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    padding: var(--button-padding);
+    cursor: pointer;
+}
+
+.fixed-nav-bar a:hover, .fixed-nav-bar .my-account-tab:hover, .fixed-nav-bar .profile-tab:hover {
+    background-color: var(--nav-hover-bg-color);
+}
+
+.fixed-nav-bar input[type=text] {
+    padding: var(--input-padding);
+    border: solid;
+    margin: var(--input-margin) 16px;
+    font-size: var(--input-font-size);
+    display: block;
+    margin-left: auto;
+}
+h1 {
+    margin-top: 50px;
+}
+.form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 15px; /* Adjust spacing between form groups */
+}
+
+.form-group label {
+    margin-bottom: 5px; /* Adjust spacing between label and input/select */
+}
+/* Additional styling for accessibility controls for better usability */
+select, input[type="submit"] {
+    padding: 10px;
+    font-size: 15px; /* Increase for better readability and easier interaction */
+    cursor: pointer;
+}
+
+/* Table Styles */
+#applications {
+    width: 100%;
+    border-collapse: collapse;
+    border-style: solid;
+    border-color: var(--text-color);
+}
+
+#applications th, #applications td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+}
+
+#applications th {
+    background-color: #FFD23F;
+}
+
+#applications tr:nth-child(even) {
+    background-color: #FFD23F;
+}
+
+#applications tr:hover {
+    background-color: #eaeaea;
+}
+
+#applications td:last-child {
+    font-weight: bold;
+}

@@ -1,0 +1,155 @@
+:root {
+    --background-color-default: #fdc044;
+    --text-color-default: #000000;
+    --background-color-high-contrast: #000000;
+    --text-color-high-contrast: #FFFFFF;
+    --background-color-low-contrast: #FFFFFF;
+    --text-color-low-contrast: #000000;
+}
+
+body {
+    font-family: 'Arial', Helvetica, sans-serif;
+    font-size: 20px;
+    line-height: 1.5;
+    background-color: #FFD23F;
+    margin: 0;
+    padding: 0;
+    color:#000000
+}
+
+html body.low-contrast {
+    background-color: #FFF; /* For low contrast */
+    color: #000; /* For low contrast */
+}
+
+html body.high-contrast {
+    background-color: #000;
+    color: white;
+}
+html body.high-contrast #applications {
+    background-color: #000;
+    color: white;
+}
+
+html body.large-text {
+    font-size: 30px; 
+}
+
+html body.extra-large-text {
+    font-size: 40px;
+}
+.fixed-nav-bar {
+    position: fixed;
+    top: 0;
+    z-index: 9999;
+    width: 100%;
+    height: 50px;
+    background-color: #000000;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: left; 
+    justify-content: space-between;
+}
+
+.fixed-nav-bar a {
+    color:#FFD23F;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 15px 20px;
+    margin-right: 20px;
+    float: left;
+    display: flex;
+    justify-content: space-between;
+}
+
+.fixed-nav-bar a:hover {
+    background-color: black
+}
+
+.fixed-nav-bar a.active {
+    background-color:black
+}
+
+.fixed-nav-bar .my-account-tab {
+    color: #FFD23F;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 15px 20px;
+    cursor: pointer;
+    margin-left: auto;
+}
+
+.fixed-nav-bar .my-account-tab:hover {
+    background-color: black
+}
+.fixed-nav-bar input[type=text] {
+    padding: 6px;
+    border: solid;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    margin-right: 16px;
+    font-size: 17px;
+    display: block;
+    margin-left: auto;
+}
+
+.header {
+    background-color: #FFD23F;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 80px 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+h1 {
+    background-color: #FFD23F;
+    display: flex;
+    height: 80px;
+    align-items: center;
+    justify-content: left;
+    font-weight: bold;
+    font-size: 24px;
+    color: black;
+    margin-top: 50px;
+    text-decoration: underline;
+}
+.login-container {
+    width: 300px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    background-color: #fdc044;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+input[type="email"], input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: black;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #2980b9;
+}

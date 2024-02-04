@@ -1,0 +1,223 @@
+:root {
+    --background-color: #fdc044;
+    --text-color: #000000; 
+    --header-background-color: #FFD23F; 
+    --header-text-color: #000000; 
+    --background-color-high-contrast: #000000;
+    --text-color-high-contrast: #FFFFFF;
+    --background-color-low-contrast: #FFFFFF;
+    --text-color-low-contrast: #000000;
+}
+
+body {
+    font-family: 'Arial', Helvetica, sans-serif;
+    font-size: 20px;
+    line-height: 1.5;
+    background-color: var(--background-color);
+    margin: 0;
+    padding: 0;
+    color: var(--text-color);
+}
+
+.fixed-nav-bar a {
+    color: var(--text-color);
+}
+.fixed-nav-bar {
+    position: fixed;
+    top: 0;
+    z-index: 9999;
+    width: 100%;
+    height: 50px;
+    background-color: #000000;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: left; 
+}
+
+.fixed-nav-bar a {
+    color:#FFD23F;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 15px 20px;
+    margin-right: 20px;
+    float: left;
+    display:block; 
+    justify-content: space-between;
+}
+
+.fixed-nav-bar a:hover {
+    background-color: black
+}
+
+.fixed-nav-bar a.active {
+    background-color:black
+}
+
+.fixed-nav-bar .my-account-tab {
+    color: #FFD23F;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 15px 20px;
+    cursor: pointer;
+    margin-left: auto;
+}
+
+.fixed-nav-bar .my-account-tab:hover {
+    background-color: black
+}
+
+.header {
+    background-color: #FFD23F;
+    padding: 20px;
+    width: 100%;
+    display: block;
+}
+
+.header h1 {
+    color: black;
+    font-size: 50px;
+    margin-top: 40px;
+    margin-bottom: -20px;
+}
+
+.subheader {
+    margin-left: 20px;
+    margin-top: 30px;
+}
+
+.subheader span {
+    color: black;
+    font-size: 30px;
+}
+
+h2 {
+    display: flex;
+    height: 80px;
+    align-items: center;
+    justify-content: left;
+    font-weight: bold;
+    font-size: 24px;
+    color: black;
+    margin-top: auto;
+    margin-bottom: auto;
+    text-decoration: underline;
+    margin-left: 10px;
+}
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    margin-top: -10px;
+}
+.search-container {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 20px;
+}
+input[type=text] {
+    padding: 3px; /* Increase padding for larger appearance */
+    border: 4px solid black; /* Optional: add border for visibility */
+    margin-right: 16px;
+    font-size: 20px; 
+    text-align: left;
+    float: left;
+    order: 2;
+    color: black;
+    background-color: white;
+    height: 40px; /* Set a specific height for the search bar */
+    width: 300px; /* Set a specific width for the search bar */
+}
+h3 {
+    font-weight: bold;
+    font-size: 24px;
+    margin-top: 20px;
+    text-decoration: underline;
+    margin-left: 10px;
+}
+.most-visited-container {
+    padding: 15px;
+    margin-top: 10px; /* Adjusted to 10px for consistency */
+    display: flex;
+    justify-content: center; /* Center the ul within the container */
+}
+
+.most-visited-container ul {
+    list-style: none;
+    padding: 0;
+    display: table-column;
+    flex-wrap: wrap; /* Allow items to wrap to the next line if space runs out */
+    justify-content: space-around; /* Distribute space around the items */
+    float: left;
+    width: 58%; /* Ensure ul takes full width of its container */
+    margin-left: 0px;
+    margin-right: auto;
+    margin-top: -10px;
+}
+
+.most-visited-container ul li {
+    margin: 0px; /* Adjust margin as needed */
+}
+
+.most-visited-container ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.most-visited-container ul li a:hover {
+    text-decoration: underline;
+}
+@media (max-width: 600px) {
+    .most-visited-container ul {
+        flex-direction: column; /* Stack items vertically on small screens */
+    }
+}
+
+h4 {
+    height: 80px;
+    align-items: center;
+    justify-content: left;
+    font-weight: bold;
+    font-size: 24px;
+    margin-top: auto;
+    margin-bottom: auto;
+    text-decoration: underline;
+    margin-left: 10px;
+}
+.services-a-z-container {
+    padding: 15px;
+    margin-top: -10px; /* Adjusted to 10px for consistency */
+    display: flex;
+    justify-content: center; /* Center the ul within the container */
+    margin-left: 10px;
+}
+
+.services-a-z-container ul {
+    list-style: none;
+    padding: 0;
+    flex-direction: column;
+    float: left;
+    width: 58%; 
+    margin-left: 0px;
+    margin-right: auto;
+    margin-top: -10px;
+}
+
+.services-a-z-container ul li {
+    margin: 0px;
+}
+
+.services-a-z-container ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.services-a-z-container ul li a:hover {
+    text-decoration: underline;
+}
+@media (max-width: 600px) {
+    .services-a-z-container ul {
+        flex-direction: column; /* Stack items vertically on small screens */
+    }
+}

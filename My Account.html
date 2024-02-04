@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My Account</title>
+    <link rel="stylesheet" href="Stylesheet1.css">
+</head>
+<body>
+    <nav class="fixed-nav-bar">
+        <a class="active" href="Homepage.html" id="onlink">Home</a>
+        <a class="active" href="My Account.html" id="onlink">Login</a>
+        <a class="active" href="Profile.html" id="onlink"> Profile</a>
+        <input type="text" id="searchBox" name="search" placeholder="Search.." aria-label="Search through site content">
+    </nav>
+    <h1></h1>
+    <div class="login-container">
+        <form action="app.py" method="post">
+            <h2>Login</h2>
+            <div class="input-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
